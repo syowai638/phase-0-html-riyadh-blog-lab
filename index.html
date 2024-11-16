@@ -1,18 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Code Challenge 1</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Riyadh</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
+    body {
+      font-family: 'Arial', sans-serif;    
+      background: linear-gradient(to right, #ff7e5f, #feb47b);  
+      color: #333; 
+      line-height: 1.6;  
+      padding: 0;
+      font-size: 16px;  
+    }
+
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+
+    header {
+      text-align: center;
+      color: #ffffff; 
+      padding: 50px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+
+    #content {
+      margin-top: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .secondary-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #e74c3c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #2c3e50;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+  
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+      
+      header h2 {
+        font-size: 18px;
+      }
+
+      .secondary-image {
+        max-height: 250px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
-    <!-- HEADER -->
-    <!-- SUB HEAD -->
+    <header>
+      <h1>Welcome to Riyadh</h1>
+      <h2>Where A Traditional Past Meets A Modern Future.</h2>
+    </header>
 
+    <section>
+      <img src="images/transit.jpg" alt="Modern Transit infrastructure in Riyadh" class="main-image">
+    </section>
+    
     <div id="content">
-      <!-- IMAGES, SMALL SUB HEADS, PARAGRAPHS, LINKS -->
+      <section>
+        <h3>Travel</h3>
+        <p>Once a mudbrick waystation along desert trading routes, Riyadh is now one of the wealthiest cities in the world. As the country’s political, financial, and administrative capital, it is a city with a fascinating blend of tradition and modernity.</p>
+      
+        <img src="./images/transportation/transit.jpg" alt="Modern Transit" class="secondary-image">
+      </section>
+
+      <section>
+        <h3>History</h3>
+        <p>Riyadh (/rɨˈjɑːd/; Arabic: الرياض‎, ar-Riyāḍ, pronounced [arːiˈjɑːdˤ], meaning "The Gardens") is the capital and largest city of Saudi Arabia. It is also the capital of Riyadh Province, and belongs to the historical regions of Najd and Al-Yamama. Located in the center of the Arabian Peninsula, Riyadh sits on a large plateau. The city is home to over 5.25 million people and serves as the urban center of a region with a population nearing 7 million.</p>
+      </section>
+
+      <section>
+        <img src="./images/garden.jpg" alt="Riyadh Garden" class="secondary-image">
+      </section>
+
+      <section>
+        <p>The city is divided into 15 municipal districts, each managed by the Riyadh Municipality, which is headed by the mayor of Riyadh. Additionally, the Riyadh Development Authority, chaired by the governor of Riyadh Province, Khalid bin Bandar Al Saud, oversees the city’s growth and development. The current mayor of Riyadh, Abdullah bin Abdul Rahman Al Mogbel, was appointed in 2012. Riyadh also hosts the largest all-female university in the world, the Princess Nora bint Abdulrahman University, and has been designated as a Beta World City.</p>
+      </section>
+
+      <section>
+        <img src="./images/transportation/camels-in-truck.jpg" alt="The roads of Riyadh" class="secondary-image">
+      </section>
+
+      <section>
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="http://www.lonelyplanet.com/saudi-arabia/riyadh" target="_blank" rel="noopener noreferrer" title="Visit Lonely Planet for more information about Riyadh">Lonely Planet</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/Riyadh" target="_blank" rel="noopener noreferrer" title="Learn more about Riyadh on Wikipedia">Wikipedia</a></li>
+        </ul>
+      </section>
     </div>
+
+    <footer>
+      <p>&copy; 2024 Riyadh Tourism. All rights reserved.</p>
+    </footer>
   </div>
 </body>
 </html>
